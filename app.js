@@ -33,7 +33,7 @@ app.get('/set-cookies', (req, res) => {
 res.cookie('newUser', false);
 res.cookie('isEmployee', true, { maxAge: 1000 * 60 * 60 * 24, httpOnly: true });
 
-res.send('you got the cookies!')
+res.send('you got the cookies, check the Application tab in the inspect tool!')
 
 });
 
@@ -45,4 +45,4 @@ console.log(cookies.newUser);
 res.json(cookies);
 
 
-})
+});
